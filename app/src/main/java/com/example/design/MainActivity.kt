@@ -32,9 +32,6 @@ class MainActivity : AppCompatActivity() {
             spannableString = getSPan1()
         }
         parentView.setBackgroundResource(color)
-
-//        setText
-
     }
 
     private fun getSPan1(): SpannableString {
