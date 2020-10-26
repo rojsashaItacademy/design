@@ -2,6 +2,7 @@ package com.example.design
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.utils.PagerDecorator
 import kotlinx.android.synthetic.main.activity_questions.*
 
 class QuestionsActivity : AppCompatActivity(), PagerListener {
@@ -37,6 +38,7 @@ class QuestionsActivity : AppCompatActivity(), PagerListener {
         pager.adapter = adapter
         pager.isUserInputEnabled = false
         pager.offscreenPageLimit = 6
+        pager.addItemDecoration(PagerDecorator())
 
         adapter.update(generateData())
     }
@@ -57,11 +59,22 @@ class QuestionsActivity : AppCompatActivity(), PagerListener {
 
 
     override fun selectAnswer(answer: Boolean, position: Int) {
-        pager.currentItem += 1
         if (answer) questionResult += 20
+        nextPage(position)
+    }
+
+    override fun selectAnswerFourQuestions(points: Int, position: Int) {
+        questionResult += points
+        nextPage(position)
+    }
+
+    private fun nextPage(position: Int) {
+        pager.currentItem += 1
 
         if (position + 1 == adapter.itemCount) {
 //            startActivity()
         }
     }
+
+
 }

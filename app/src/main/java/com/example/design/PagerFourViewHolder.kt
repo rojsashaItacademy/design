@@ -3,6 +3,8 @@ package com.example.design
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.item_questions.view.*
+import kotlinx.android.synthetic.main.item_questions.view.tvCount
+import kotlinx.android.synthetic.main.item_questions_four_buttons.view.*
 
 class PagerFourViewHolder(view: View) : RecyclerView.ViewHolder(view) {
     fun bind(s: String, position: Int, size: Int, listener: PagerListener) {
@@ -12,11 +14,17 @@ class PagerFourViewHolder(view: View) : RecyclerView.ViewHolder(view) {
             size
         )
 
-        itemView.btnNo.setOnClickListener {
-            listener.selectAnswer(false, position)
+        itemView.btnOne.setOnClickListener {
+            listener.selectAnswerFourQuestions(0, position)
         }
-        itemView.btnYes.setOnClickListener {
-            listener.selectAnswer(true, position)
+        itemView.btnOne.setOnClickListener {
+            listener.selectAnswerFourQuestions(10, position)
+        }
+        itemView.btnFive.setOnClickListener {
+            listener.selectAnswerFourQuestions(15, position)
+        }
+        itemView.btnTen.setOnClickListener {
+            listener.selectAnswerFourQuestions(20, position)
         }
     }
 }
