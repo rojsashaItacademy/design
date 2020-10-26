@@ -1,7 +1,9 @@
 package com.example.design
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.design.result.ResultActivity
 import com.example.utils.PagerDecorator
 import kotlinx.android.synthetic.main.activity_questions.*
 
@@ -72,9 +74,14 @@ class QuestionsActivity : AppCompatActivity(), PagerListener {
         pager.currentItem += 1
 
         if (position + 1 == adapter.itemCount) {
-//            startActivity()
+            val intent = Intent(this, ResultActivity::class.java)
+            intent.putExtra(POINTS, questionResult)
+            startActivity(intent)
+            finish()
         }
     }
 
-
+    companion object {
+        const val POINTS = "POINTS"
+    }
 }

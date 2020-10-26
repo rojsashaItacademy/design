@@ -4,4 +4,24 @@
     <string name="tv_second">или</string>
     <string name="tv_third">не Заболею?</string>
     <string name="question_number">%1$d/%2$d</string>
+    <string name="title_green">ВЫ МОЖЕТЕ ЛУЧШЕ!</string>
+    <string name="title_yellow">ХОДИТЕ ПО КРАЮ!</string>
+    <string name="title_orange">ВИРУС ГДЕ-ТО РЯДОМ!</string>
+    <string name="title_red">СРОЧНЫЙ КАРАНТИН!</string>
+
+    <string name="small_desc_green">Ваш риск заболеть составляет\nот 10% до 30%</string>
+    <string name="small_desc_yellow">Ваш риск заболеть составляет\nот 30% до 50%</string>
+    <string name="small_desc_orange">Ваш риск заболеть составляет\nот 50% до 70%</string>
+    <string name="small_desc_red">Ваш риск заболеть составляет\nот 70% до 100%</string>
+
+    <string name="big_desc_green">Видно, что вы приняли во внимание опасность ситуации. Но, все же недостаточно для того, чтобы быть в безопасности.\n\nПостарайтесь уделить внимание своему иммунитету и максимально ограничить физические контакты с внешним миром</string>
+
+
+
+
+
+    <string name="big_desc_yellow">Ваш риск заболеть составляет\nот 30% до 50%</string>
+    <string name="big_desc_orange">Ваш риск заболеть составляет\nот 50% до 70%</string>
+    <string name="big_desc_red">Ваш риск заболеть составляет\nот 70% до 100%</string>
+
 </resources>

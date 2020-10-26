@@ -6,4 +6,7 @@
     <color name="black_text">#0A0909</color>
     <color name="yellow">#EBE100</color>
     <color name="black_lighter">#25282B</color>
+    <color name="green">#85B71A</color>
+    <color name="orange">#FDA608</color>
+    <color name="red">#E93C3C</color>
 </resources>
