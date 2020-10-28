@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.design.result.ResultActivity
 import com.example.utils.PagerDecorator
+import com.example.utils.SpinnerTransformation
 import kotlinx.android.synthetic.main.activity_questions.*
 
 class QuestionsActivity : AppCompatActivity(), PagerListener {
@@ -33,6 +34,7 @@ class QuestionsActivity : AppCompatActivity(), PagerListener {
             pager.currentItem -= 1
         } else {
             super.onBackPressed()
+            overridePendingTransition(R.anim.slide_left_out, R.anim.slide_right_out)
         }
     }
 
@@ -40,6 +42,7 @@ class QuestionsActivity : AppCompatActivity(), PagerListener {
         pager.adapter = adapter
         pager.isUserInputEnabled = false
         pager.offscreenPageLimit = 6
+        pager.setPageTransformer(SpinnerTransformation())
         pager.addItemDecoration(PagerDecorator())
 
         adapter.update(generateData())

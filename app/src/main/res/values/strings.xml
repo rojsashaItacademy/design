@@ -23,5 +23,6 @@
     <string name="big_desc_yellow">Ваш риск заболеть составляет\nот 30% до 50%</string>
     <string name="big_desc_orange">Ваш риск заболеть составляет\nот 50% до 70%</string>
     <string name="big_desc_red">Ваш риск заболеть составляет\nот 70% до 100%</string>
+    <string name="big_desc_colored">ограничить физические контакты</string>
 
 </resources>

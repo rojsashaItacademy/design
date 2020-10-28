@@ -50,6 +50,7 @@ class MainActivity : AppCompatActivity() {
     private fun setupListeners() {
         btnStart.setOnClickListener {
             startActivity(Intent(this, QuestionsActivity::class.java))
+            overridePendingTransition(R.anim.slide_left, R.anim.slide_right)
         }
     }
 }
