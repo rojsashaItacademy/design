@@ -65,7 +65,7 @@
                 style="@style/TextViewMainBig"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/tv_third"
+
                 app:layout_constraintTop_toBottomOf="@id/tvSecond" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

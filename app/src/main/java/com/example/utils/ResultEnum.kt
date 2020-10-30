@@ -9,7 +9,8 @@ enum class ResultEnum(
     val smallTitle: Int,
     val color: Int,
     val bigDesc: Int,
-    val bigDescColored: Int
+    val bigDescColored: Int,
+    val textSize: Float
 ) {
     GREEN(
         R.drawable.bg_green,
@@ -18,7 +19,8 @@ enum class ResultEnum(
         R.string.small_desc_green,
         R.color.green,
         R.string.big_desc_green,
-        R.string.big_desc_colored
+        R.string.big_desc_colored,
+        17f
     ),
     YELLOW(
         R.drawable.bg_yellow,
@@ -27,7 +29,8 @@ enum class ResultEnum(
         R.string.small_desc_yellow,
         R.color.yellow,
         R.string.big_desc_green,
-        R.string.big_desc_colored
+        R.string.big_desc_colored,
+        17f
     ),
     ORANGE(
         R.drawable.bg_orange,
@@ -36,7 +39,8 @@ enum class ResultEnum(
         R.string.small_desc_orange,
         R.color.orange,
         R.string.big_desc_green,
-        R.string.big_desc_colored
+        R.string.big_desc_colored,
+        15f
     ),
     RED(
         R.drawable.bg_red,
@@ -45,7 +49,8 @@ enum class ResultEnum(
         R.string.small_desc_red,
         R.color.red,
         R.string.big_desc_green,
-        R.string.big_desc_colored
+        R.string.big_desc_colored,
+        17f
     );
 
     companion object {
